@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="resetCss.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="otro">
+      <img src="imagenes/Logo.png" alt="" />
+      <input
+        type="text"
+        name="inputTxt"
+        id="inputTxt"
+        onkeypress="return check(event)"
+        placeholder="Ingrese el texto aqui"
+      />
+      <div class="frame1">
+        <p class="sugerencia">&nbsp;Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="frame3">
+        <button onclick="encriptar()" id="encriptar">Encriptar</button>
+        <button onclick="desencriptar()" id="desencriptar">Desencriptar</button>
+      </div>
+      <div class="frame5" id="frame5">
+        <h3>Ningún mensaje fue encontrado</h3>
+        <input
+          type="text"
+          class="txtDesencriptar"
+          placeholder="Ingresa el texto que desees encriptar o desencriptar."
+        />
+      </div>
+      <img src="imagenes/Muneco.png" alt="" class="muneco" id="muneco" />
+      <p class="resultado" id="resultado" hidden>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes,
+        sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut
+        laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit.
+        Libero, sodales duis fames id diam feugiat aliquet non egestas.
+      </p>
+      <button onclick="copiarTexto()" class="copiar" id="copiar" hidden>
+        Copiar
+      </button>
+      <div class="rectangle"></div>
+    </div>
+  </body>
+</html>
